@@ -1,0 +1,133 @@
+/* Main page */
+.register-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Form layout */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+/* Labels */
+.register-form label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 8px;
+}
+
+/* Input fields */
+.register-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input focus */
+.register-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Error messages */
+.error-message {
+    color: #dc2626;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Submit button */
+#btnSave {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Button hover */
+#btnSave:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+/* Disabled button */
+#btnSave:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Student table */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Table header */
+.student-table thead {
+    background-color: #1e40af;
+    color: white;
+}
+
+.student-table th {
+    padding: 14px 12px;
+    text-align: left;
+}
+
+/* Table cells */
+.student-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+}
+
+/* Alternate row colors */
+.student-table tbody tr:nth-child(even) {
+    background-color: #f3f6fc;
+}
+
+/* Hover effect */
+.student-table tbody tr:hover {
+    background-color: #e8efff;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .register-container {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .student-table {
+        font-size: 12px;
+    }
+
+    .student-table th,
+    .student-table td {
+        padding: 8px 6px;
+    }
+
+    .register-form input {
+        font-size: 14px;
+    }
+}
